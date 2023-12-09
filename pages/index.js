@@ -1,11 +1,16 @@
-import HeroSection from "@/components/HeroSection";
 import React from "react";
+import dynamic from 'next/dynamic';
 import Project from "@/components/Project";
 import Navbar from "@/components/NavBar";
 import EmailSection from "@/components/EmailSection";
 import Footer from "@/components/Footer";
 import AboutMe from "@/components/AboutMe";
 import AchievementsSection from "@/components/Achievement";
+
+const HeroSection = dynamic(
+  () => import('../components/HeroSection'),
+  { ssr: false }
+);
 
 export default function Home(){
   return(

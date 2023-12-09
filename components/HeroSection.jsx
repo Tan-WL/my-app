@@ -2,6 +2,7 @@ import React from "react";
 import TypeWritter from "typewriter-effect";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 const HeroSection = () => {
 
@@ -76,4 +77,4 @@ const HeroSection = () => {
     );
 };
 
-export default HeroSection;
+export default dynamic(() => Promise.resolve(HeroSection), {ssr: false});
