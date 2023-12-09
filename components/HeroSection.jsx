@@ -18,10 +18,11 @@ const HeroSection = () => {
                         <span className="text-white text-8xl">
                             Hello, I'm {" "}
                             <span className="text-transparent bg-clip-text sm:text-8xl md:text-9xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-                                Liang
+                                Wen Liang
                             </span>
                         </span>
-                        <span className="text-7xl">
+                        <br></br>
+                        <span className="text-7xl">I'm
                             <TypeWritter
                                 options={{
                                     autoStart: true,
@@ -42,15 +43,25 @@ const HeroSection = () => {
                                 }}
                             ></TypeWritter>
                         </span>
-                        <p className="text-sky-100 mt-8 text-base sm:text-lg md:text-xl mb-6">Slide down to know more about me!</p>
-                        <Link
-                            href="https://www.linkedin.com/in/wen-liang-tan-68a838263/"
-                            className="px-6 inline-block py-3 rounded-full border border-solid-2 border-pink-500 hover:bg-pink-400">
-                            View my Resume
-                        </Link>
                     </h1>
+                    <p className="text-sky-100 mt-8 text-base sm:text-lg md:text-xl mb-6">Slide down to know more about me!</p>
+                    <Link
+                        href="#projects" 
+                        className="px-12 mb-4 inline-block py-3 rounded-full mr-4 border-solid border-2 border-indigo-600 hover:bg-violet-600">
+                        <span className="text-xl text-white">Projects</span>
+                    </Link>
+                    <Link
+                        href="https://drive.google.com/file/d/1Sd0uDjirJVjSkSMD2goYUTk_6A3n9LYg/view?usp=sharing"
+                        className="px-6 inline-block py-4 rounded-full border border-solid-2 border-pink-500 hover:bg-pink-400">
+                        View my Resume
+                    </Link>
                 </motion.div>
                 <div className="col-span-4 md:col-span-4 place-self-center mt-12 lg:mt-0 pt-0 lg:pt-24">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                    >
                     <div className="w-[400px] h-[400px] relative z-0">
                         <img
                             src="/Hero-Section.png"
@@ -58,6 +69,7 @@ const HeroSection = () => {
                             className="transform rounded-full flex relative -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                         ></img>
                     </div>
+                    </motion.div>
                 </div>
             </div>
         </main>
