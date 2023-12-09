@@ -16,7 +16,7 @@ const EmailSection = () => {
                 <p className="text-[#ADB7BE] mb-4 max-w-md mt-8 text-justify">
                 I am currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I will try my best to get back to you!
                 </p>
-                <h4 className="pb-3 mt-6">Let's get in touch!</h4>
+                <h4 className="pb-3 mt-6">Let us get in touch!</h4>
                 <div className=" flex flex-row gap-4 mt-6">
                     <Link href="https://github.com/Tan-WL">
                         <Image src={GithubIcon} alt="Github Icon" />
