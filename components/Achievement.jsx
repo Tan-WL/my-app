@@ -22,6 +22,7 @@ const AchievementsSection = () => {
             {achievementsList.map((achievement) => {
                 return(
                     <div 
+                        key={achievement.metric}
                         className="flex flex-col items-center justify-center mx-4">
                         <h2 className="text-white text-4xl font-bold">
                             {achievement.value}
