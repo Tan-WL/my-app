@@ -17,13 +17,13 @@ const HeroSection = () => {
                 >
                     <h1 className="font-extrabold">
                         <span className="text-white text-8xl">
-                            Hello, I&apos;m {" "}
+                            Hello, I am {" "}
                             <span className="text-transparent bg-clip-text sm:text-8xl md:text-9xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                                 Wen Liang
                             </span>
                         </span>
                         <br></br>
-                        <span className="text-7xl">I&apos;m
+                        <span className="text-7xl">I am
                             <TypeWritter
                                 options={{
                                     autoStart: true,
